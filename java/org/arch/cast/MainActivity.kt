@@ -24,8 +24,9 @@ import java.util.concurrent.LinkedBlockingQueue
 
 class MainActivity : AppCompatActivity() {
 
-    //internal val ipAddr = "10.0.0.11"
-    internal val ipAddr = "192.168.43.19"
+    //internal val ipAddr = "10.0.0.10"
+    //internal val ipAddr = "192.168.43.19"
+    internal val ipAddr = "24.133.216.119"
     internal val tcpPort = 1238
     internal val udpPort = 1873
 
