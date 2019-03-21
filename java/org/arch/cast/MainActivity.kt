@@ -21,6 +21,9 @@ import java.net.InetSocketAddress
 import java.net.Socket
 import java.nio.ByteBuffer
 import java.util.concurrent.LinkedBlockingQueue
+import android.app.Activity
+import android.view.inputmethod.InputMethodManager
+
 
 class MainActivity : AppCompatActivity() {
 
@@ -92,7 +95,12 @@ class MainActivity : AppCompatActivity() {
                     channel = s.toString().toInt()
                     metaQueue.put('c'.toInt())
                     metaQueue.put(channel)
+                    val imm = this@MainActivity.getSystemService(Activity.INPUT_METHOD_SERVICE) as InputMethodManager
+                    imm.hideSoftInputFromWindow(textChannel.windowToken, 0)
+                    textChannel.setTextColor(ContextCompat.getColor(this@MainActivity, R.color.colorPrimaryDark))
                 }
+                else
+                    textChannel.setTextColor(ContextCompat.getColor(this@MainActivity, R.color.colorAccentDark))
             }
         })
 
