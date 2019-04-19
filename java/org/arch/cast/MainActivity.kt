@@ -24,7 +24,6 @@ import java.util.concurrent.LinkedBlockingQueue
 import android.app.Activity
 import android.view.inputmethod.InputMethodManager
 
-
 class MainActivity : AppCompatActivity() {
 
     //internal val ipAddr = "10.0.0.10"

@@ -3,11 +3,15 @@
     <item android:top="8dp" android:bottom="8dp" android:left="8dp" android:right="8dp">
         <shape android:shape="oval">
             <size android:width="96dp" android:height="96dp"/>
+            <stroke android:width="20dp" android:color="@android:color/transparent"/>
+            <solid android:color="@color/colorAccent"/>
+        </shape>
+    </item>
+    <item android:top="8dp" android:bottom="8dp" android:left="8dp" android:right="8dp">
+        <shape android:shape="oval">
+            <size android:width="96dp" android:height="96dp"/>
             <stroke android:width="4dp" android:color="@color/colorPrimary"/>
             <solid android:color="@android:color/transparent"/>
         </shape>
     </item>
-    <item
-        android:gravity="center"
-        android:drawable="@drawable/mic_idle"/>
 </layer-list>

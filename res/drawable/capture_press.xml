@@ -14,7 +14,4 @@
             <solid android:color="@android:color/transparent"/>
         </shape>
     </item>
-    <item
-        android:gravity="center"
-        android:drawable="@drawable/mic_pressed"/>
 </layer-list>
